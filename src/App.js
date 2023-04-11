@@ -18,7 +18,6 @@ function App() {
   const handleSaved = () => showSaved(!saved);
   if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
     if (click) {
-      localStorage.setItem("incrementedCount", count);
       localStorage.setItem("NATallies", NATallies);
       localStorage.setItem("SATallies", SATallies);
       localStorage.setItem("EUTallies", EUTallies);
@@ -75,7 +74,7 @@ function App() {
     <div className="App">
       <div className="App-header">
         Click Count: {parseInt(count)}
-        <button className="GeneralButton" onClick={() => {incrementCount(); pressCountButton(); determineTally(latitude, longitude); console.log(click)}}>Increment</button>
+        <button className="GeneralButton" onClick={() => {incrementCount(); pressCountButton(); determineTally(latitude, longitude); localStorage.setItem("incrementedCount", count)}}>Increment</button>
         <button className="GeneralButton" onClick={() => {handleMap()}}>{map ? "Close" : "Geography"}</button>     
         <ul className={map ? 'MapMenuActive' : 'MapMenu'}> 
           <li className='MapItem'>
