@@ -20,8 +20,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 35px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: whitesmoke;
 }
 
 .App-link {
@@ -35,4 +36,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.GeneralButton {
+  text-align: center;
+    border: 4px solid black;
+    border-radius: 40px;
+    width: 240px;
+    height: 65px;
+    margin: 5vh auto 0px auto;
+    padding: 10px 0;
+    background-color: darkgoldenrod;
+    box-shadow: goldenrod;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslategray;
+}
+
+.MapContainer {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  height: auto;
+  max-width: 1920px;
+}
+
+.MapMenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  border-radius: 40px;
+}
+
+.MapMenuActive {
+  background: goldenrod;
+  opacity: 1;
+  transition: all 0.5s ease;
+  width: 850px;
+  height: 500px;
+  border-radius: 40px;
+}
+
+.MapItem {
+  height: 80px;
+}
+
+.table {
+  border: 2px solid forestgreen;
+  width: 800px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+}
+  
+.th {
+  border-bottom: 1px solid black;
+}
+  
+.td {
+  text-align: center;
 }
