@@ -7,7 +7,6 @@ function App() {
   const pressCountButton = () => setClick(true);
   const incrementCount = () => {
     setCount(count + 1);
-    console.log(window.location.href);
   }
   let [NATallies, setNATallies] = useState(0); let [SATallies, setSATallies] = useState(0); let [EUTallies, setEUTallies] = useState(0); let [ASTallies, setASTallies] = useState(0);
   let [AFTallies, setAFTallies] = useState(0); let [AUTallies, setAUTallies] = useState(0); let [ANTallies, setANTallies] = useState(0);
@@ -72,12 +71,11 @@ function App() {
       setANTallies(ANTallies + 1);
     }
   }
-
   return (
     <div className="App">
       <div className="App-header">
         Click Count: {parseInt(count)}
-        <button className="GeneralButton" onClick={() => {incrementCount(); pressCountButton(); determineTally(latitude, longitude)}}>Increment</button>
+        <button className="GeneralButton" onClick={() => {incrementCount(); pressCountButton(); determineTally(latitude, longitude); console.log(click)}}>Increment</button>
         <button className="GeneralButton" onClick={() => {handleMap()}}>{map ? "Close" : "Geography"}</button>     
         <ul className={map ? 'MapMenuActive' : 'MapMenu'}> 
           <li className='MapItem'>
