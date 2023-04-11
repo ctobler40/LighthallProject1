@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LighthallProject1/static/css/main.d3f78b54.css",
-    "main.js": "/LighthallProject1/static/js/main.3f68425f.js",
-    "static/js/787.215f4530.chunk.js": "/LighthallProject1/static/js/787.215f4530.chunk.js",
-    "index.html": "/LighthallProject1/index.html",
-    "main.d3f78b54.css.map": "/LighthallProject1/static/css/main.d3f78b54.css.map",
-    "main.3f68425f.js.map": "/LighthallProject1/static/js/main.3f68425f.js.map",
-    "787.215f4530.chunk.js.map": "/LighthallProject1/static/js/787.215f4530.chunk.js.map"
+    "main.css": "/lighthall-project1/static/css/main.d3f78b54.css",
+    "main.js": "/lighthall-project1/static/js/main.e1092cbb.js",
+    "static/js/787.215f4530.chunk.js": "/lighthall-project1/static/js/787.215f4530.chunk.js",
+    "index.html": "/lighthall-project1/index.html",
+    "main.d3f78b54.css.map": "/lighthall-project1/static/css/main.d3f78b54.css.map",
+    "main.e1092cbb.js.map": "/lighthall-project1/static/js/main.e1092cbb.js.map",
+    "787.215f4530.chunk.js.map": "/lighthall-project1/static/js/787.215f4530.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3f78b54.css",
-    "static/js/main.3f68425f.js"
+    "static/js/main.e1092cbb.js"
   ]
 }
