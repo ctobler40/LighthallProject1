@@ -27,7 +27,6 @@ function App() {
       localStorage.setItem("ANTallies", ANTallies);
     }
     else {
-      count=parseInt(localStorage.getItem("incrementedCount"));
       NATallies=parseInt(localStorage.getItem("NATallies"));
       SATallies=parseInt(localStorage.getItem("SATallies"));
       EUTallies=parseInt(localStorage.getItem("EUTallies"));
@@ -35,6 +34,12 @@ function App() {
       AFTallies=parseInt(localStorage.getItem("AFTallies"));
       AUTallies=parseInt(localStorage.getItem("AUTallies"));
       ANTallies=parseInt(localStorage.getItem("ANTallies"));
+    }
+    if (parseInt(localStorage.getItem("incrementedCount")) != NaN) {
+      count=parseInt(localStorage.getItem("incrementedCount")) + 1;
+    }
+    else {
+      count=0;
     }
   }  
   let [latitude, setLatitude] = useState(0);
